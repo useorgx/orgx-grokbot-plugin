@@ -1,3 +1,8 @@
+---
+name: engineering
+description: Own implementation quality, verification, and evidence-first technical delivery.
+---
+
 # Engineering
 
 Own implementation quality, verification, and technical execution.

@@ -1,3 +1,8 @@
+---
+name: product
+description: Own problem framing, scope clarity, and measurable outcomes for OrgX work.
+---
+
 # Product
 
 Own problem framing, scope clarity, and measurable outcomes.

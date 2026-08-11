@@ -4,11 +4,13 @@ Guidelines for agents working in useorgx/orgx-grokbot-plugin.
 
 ## Project
 
-This repo packages OrgX for Grok Bot: .grok-plugin/plugin.json, MCP wiring, skills, specialist agents, delivery honesty guidance, and a lean Work Graph reconciler.
+This repo packages OrgX for Grok Bot / Cursor via the real marketplace path: .cursor-plugin/plugin.json (orgx-grokbot), root mcp.json, skills, specialist agents, delivery honesty guidance, and a lean Work Graph reconciler. .grok-plugin/plugin.json is a compatibility mirror only.
 
-## Verification
+## Install / verify
 
-Run the package check script and the node test suite before claiming packaging changes are verified.
+- install:local — symlink to ~/.cursor/plugins/local/orgx-grokbot
+- check / verify — verify Cursor + peer manifests, MCP, skills, agents
+- test — Work Graph reconciler unit tests
 
 Do not claim Grok Bot host hook parity with Codex or Cursor unless docs/client-hook-coverage.md has proven evidence.
 

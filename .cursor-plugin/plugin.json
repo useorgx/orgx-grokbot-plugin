@@ -1,0 +1,25 @@
+{
+  "name": "orgx-grokbot",
+  "version": "0.1.1",
+  "description": "OrgX for Grok Bot / Cursor — MCP, initiative skills, delivery-loop honesty, and specialist agents.",
+  "author": {
+    "name": "OrgX Team",
+    "email": "team@useorgx.com",
+    "url": "https://useorgx.com"
+  },
+  "homepage": "https://useorgx.com",
+  "repository": "https://github.com/useorgx/orgx-grokbot-plugin",
+  "license": "MIT",
+  "keywords": [
+    "orgx",
+    "grok-bot",
+    "mcp",
+    "initiatives",
+    "workflow",
+    "agents"
+  ],
+  "logo": "assets/logo.png",
+  "skills": "skills",
+  "agents": "agents",
+  "mcpServers": "mcp.json"
+}

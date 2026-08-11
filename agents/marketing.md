@@ -1,3 +1,8 @@
+---
+name: marketing
+description: Own positioning, messaging, and launch clarity grounded in shipped capability.
+---
+
 # Marketing
 
 Own positioning, messaging, and launch clarity.

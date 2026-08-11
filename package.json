@@ -1,6 +1,6 @@
 {
   "name": "@useorgx/grokbot-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "OrgX Grok Bot plugin with MCP access, initiative-aware skills, delivery honesty, and a lean Work Graph reconciler.",
   "type": "module",
   "private": true,
@@ -11,18 +11,23 @@
     "verify": "node scripts/verify-plugin.mjs",
     "test": "node --test hooks/scripts/orgx-work-graph-reconcile.test.mjs",
     "check": "node scripts/verify-plugin.mjs",
-    "prepublishOnly": "npm run check"
+    "prepublishOnly": "npm run check",
+    "install:local": "node ./scripts/install-local.mjs"
   },
   "files": [
     ".agents/plugins/marketplace.json",
+    ".cursor-plugin/",
     ".grok-plugin/",
     ".mcp.json",
+    "mcp.json",
     "agents/",
     "assets/",
     "docs/client-hook-coverage.md",
+    "docs/marketplace-install.md",
     "hooks/scripts/orgx-work-graph-reconcile.mjs",
     "plugin.manifest.json",
     "scripts/verify-plugin.mjs",
+    "scripts/install-local.mjs",
     "skills/",
     "README.md",
     "LICENSE",

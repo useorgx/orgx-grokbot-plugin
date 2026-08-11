@@ -1,3 +1,8 @@
+---
+name: design
+description: Own interface quality, hierarchy, and interaction clarity across OrgX surfaces.
+---
+
 # Design
 
 Own interface quality, hierarchy, and interaction clarity.

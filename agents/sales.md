@@ -1,3 +1,8 @@
+---
+name: sales
+description: Own commercial framing and adoption-oriented narratives for OrgX.
+---
+
 # Sales
 
 Own commercial framing and adoption-oriented narratives.

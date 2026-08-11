@@ -22,7 +22,7 @@ Coverage is not sufficient yet for the full operator experience across every cli
 
 | Client | Current OrgX surface | Hook/support level | Chronicle route | Missing for seamless UX |
 | --- | --- | --- | --- | --- |
-| Grok Bot | This package: .grok-plugin/plugin.json, .mcp.json, skills, agents, lean reconciler. | scaffold/unknown — no proven host lifecycle hooks yet. | Preferred: get_operator_chronicle. Fallback: orgx_recommend morning_brief. | Prove host hook events, tool list refresh, and durable MCP auth in a real Grok Bot session. |
+| Grok Bot | This package: .cursor-plugin/plugin.json, mcp.json, .grok-plugin mirror, skills, agents, lean reconciler. | scaffold/unknown — no proven host lifecycle hooks yet. | Preferred: get_operator_chronicle. Fallback: orgx_recommend morning_brief. | Prove host hook events, tool list refresh, and durable MCP auth in a real Grok Bot session. |
 | Codex | Separate orgx-codex-plugin with proven Stop-hook reconciliation in that package. | Stronger local hook coverage than Grok Bot. | Preferred: get_operator_chronicle. | Not packaged here; see Codex plugin docs. |
 | Cursor | Separate cursor-plugin with MCP plus rules/commands. | MCP viable; no matching passive lifecycle package claimed here. | Preferred: get_operator_chronicle. | Not packaged here; see Cursor plugin docs. |
 
@@ -34,3 +34,4 @@ Coverage is not sufficient yet for the full operator experience across every cli
 - Grok Bot host hooks remain labeled scaffold/unknown until runtime proof exists.
 
 Do not claim Codex or Cursor parity from this package alone.
+Grok Bot also loads via the real Cursor path: .cursor-plugin/plugin.json, root mcp.json, and scripts/install-local.mjs (see docs/marketplace-install.md).

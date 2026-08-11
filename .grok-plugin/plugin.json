@@ -1,6 +1,6 @@
 {
   "name": "orgx-grokbot-plugin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "OrgX MCP access, initiative-aware skills, delivery honesty, and specialist agents for Grok Bot.",
   "author": {
     "name": "OrgX Team",
@@ -18,7 +18,7 @@
   ],
   "skills": "./skills/",
   "agents": "./agents/",
-  "mcpServers": "./.mcp.json",
+  "mcpServers": "./mcp.json",
   "interface": {
     "displayName": "OrgX for Grok Bot",
     "shortDescription": "Install OrgX MCP, chronicle reporting, and initiative-aware workflows in Grok Bot.",

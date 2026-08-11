@@ -1,8 +1,8 @@
 # OrgX Grok Bot Plugin
 
-Grok Bot plugin package for OrgX:
+Grok Bot / Cursor plugin package for OrgX:
 
-- OrgX MCP server wiring via `https://mcp.useorgx.com/mcp`
+- OrgX MCP server wiring via https://mcp.useorgx.com/mcp
 - Operator chronicle reporting for decisions, PRs, artifacts, goals, gaps, and priorities
 - Initiative-aware skills plus a delivery-honesty skill for evidence-first status
 - Specialist agents for orchestration, engineering, product, design, operations, marketing, and sales
@@ -10,19 +10,38 @@ Grok Bot plugin package for OrgX:
 
 ## Why this plugin exists
 
-This repo packages OrgX for Grok Bot using the same family of install surfaces as the Codex, Cursor, and Claude Code plugins:
+This repo packages OrgX for Grok Bot using the real Cursor marketplace install path:
 
-- `.grok-plugin/plugin.json`
-- `.mcp.json`
-- `skills/**/SKILL.md`
-- `agents/`
-- `assets/`
+- `.cursor-plugin/plugin.json` — authoritative Cursor plugin manifest (`orgx-grokbot`)
+- `.cursor-plugin/marketplace.json` — team marketplace listing
+- `mcp.json` — auto-discovered MCP (`mcpServers.orgx`)
+- `skills/**/SKILL.md`, `agents/`, `assets/`
+- `.grok-plugin/plugin.json` — thin compatibility mirror only (non-authoritative)
+
+## Install
+
+### Local (symlink)
+
+Run the package script install:local. Links this repo to ~/.cursor/plugins/local/orgx-grokbot. Restart or reload Cursor / Grok Bot afterward.
+
+### Team marketplace
+
+Cursor Dashboard -> Plugins -> Import from Repo -> https://github.com/useorgx/orgx-grokbot-plugin
+
+### Public marketplace
+
+Submit at https://cursor.com/marketplace/publish. Public listing needs Cursor review.
+
+Full steps: docs/marketplace-install.md.
 
 ## Structure
 
 ```text
-.grok-plugin/plugin.json
+.cursor-plugin/plugin.json
+.cursor-plugin/marketplace.json
+mcp.json
 .mcp.json
+.grok-plugin/plugin.json
 .agents/plugins/marketplace.json
 plugin.manifest.json
 skills/orgx-initiative-ops/SKILL.md
@@ -30,7 +49,9 @@ skills/orgx-runtime-reporting/SKILL.md
 skills/orgx-delivery-loop/SKILL.md
 agents/
 hooks/scripts/orgx-work-graph-reconcile.mjs
+scripts/install-local.mjs
 scripts/verify-plugin.mjs
+docs/marketplace-install.md
 docs/client-hook-coverage.md
 assets/icon.png
 assets/logo.png
@@ -62,7 +83,7 @@ Grok Bot host lifecycle hooks are scaffold/unknown until proven in a real host s
 
 ## Verification
 
-Use the check and test package scripts from the package root.
+Use the package check and test scripts from the package root.
 
 ## License
 
