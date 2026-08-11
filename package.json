@@ -1,0 +1,51 @@
+{
+  "name": "@useorgx/grokbot-plugin",
+  "version": "0.1.0",
+  "description": "OrgX Grok Bot plugin with MCP access, initiative-aware skills, delivery honesty, and a lean Work Graph reconciler.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "orgx-grokbot-reconcile-hooks": "hooks/scripts/orgx-work-graph-reconcile.mjs"
+  },
+  "scripts": {
+    "verify": "node scripts/verify-plugin.mjs",
+    "test": "node --test hooks/scripts/orgx-work-graph-reconcile.test.mjs",
+    "check": "node scripts/verify-plugin.mjs",
+    "prepublishOnly": "npm run check"
+  },
+  "files": [
+    ".agents/plugins/marketplace.json",
+    ".grok-plugin/",
+    ".mcp.json",
+    "agents/",
+    "assets/",
+    "docs/client-hook-coverage.md",
+    "hooks/scripts/orgx-work-graph-reconcile.mjs",
+    "plugin.manifest.json",
+    "scripts/verify-plugin.mjs",
+    "skills/",
+    "README.md",
+    "LICENSE",
+    "AGENTS.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "orgx",
+    "grok-bot",
+    "mcp",
+    "workflow",
+    "agents"
+  ],
+  "author": "OrgX Team <team@useorgx.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/useorgx/orgx-grokbot-plugin.git"
+  },
+  "homepage": "https://github.com/useorgx/orgx-grokbot-plugin",
+  "bugs": {
+    "url": "https://github.com/useorgx/orgx-grokbot-plugin/issues"
+  }
+}

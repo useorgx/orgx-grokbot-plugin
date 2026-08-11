@@ -1,0 +1,45 @@
+{
+  "name": "orgx-grokbot-plugin",
+  "version": "0.1.0",
+  "description": "OrgX MCP access, initiative-aware skills, delivery honesty, and specialist agents for Grok Bot.",
+  "author": {
+    "name": "OrgX Team",
+    "url": "https://useorgx.com"
+  },
+  "homepage": "https://useorgx.com/integrations/mcp",
+  "repository": "https://github.com/useorgx/orgx-grokbot-plugin",
+  "license": "MIT",
+  "keywords": [
+    "orgx",
+    "grok-bot",
+    "mcp",
+    "initiatives",
+    "workflow"
+  ],
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "OrgX for Grok Bot",
+    "shortDescription": "Install OrgX MCP, chronicle reporting, and initiative-aware workflows in Grok Bot.",
+    "longDescription": "Bundles OrgX MCP configuration, Grok Bot skills, specialist agents, and a lean Work Graph reconciler for operator chronicle reporting, initiative orchestration, delivery honesty, artifact registration, and human-in-the-loop decision flows.",
+    "developerName": "OrgX Team",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://useorgx.com",
+    "privacyPolicyURL": "https://useorgx.com/privacy",
+    "termsOfServiceURL": "https://useorgx.com/terms",
+    "defaultPrompt": [
+      "Show my 30-day OrgX operator chronicle via get_operator_chronicle.",
+      "What engineered today, what's stuck, and the one merge I should make?",
+      "Scaffold this outcome into OrgX workstreams with proof + next action."
+    ],
+    "brandColor": "#14B8A6",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  }
+}

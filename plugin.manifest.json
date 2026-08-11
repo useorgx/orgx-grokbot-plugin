@@ -1,0 +1,16 @@
+{
+  "plugin_name": "@useorgx/grokbot-plugin",
+  "version": "0.1.0",
+  "manifest_fingerprint": "",
+  "signature": "",
+  "capabilities": [
+    "plugin:heartbeat",
+    "plugin:runtime_hooks",
+    "work_graph:reconcile",
+    "mcp:operator_chronicle"
+  ],
+  "driver_ids": [
+    "grok_bot"
+  ],
+  "notes": "fingerprint + signature populated by the npm prepublish step; dev builds ship unsigned and receive 'degraded' status from the OrgX server in permissive mode."
+}
