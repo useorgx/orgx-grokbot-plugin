@@ -2,7 +2,7 @@
 
 Grok Bot / Cursor plugin package for OrgX:
 
-- OrgX MCP server wiring via https://mcp.useorgx.com/mcp
+- OrgX MCP server wiring via https://mcp.useorgx.com/mcp?profile=v2
 - Operator chronicle reporting for decisions, PRs, artifacts, goals, gaps, and priorities
 - Initiative-aware skills plus a delivery-honesty skill for evidence-first status
 - Specialist agents for orchestration, engineering, product, design, operations, marketing, and sales
@@ -65,7 +65,7 @@ Use OrgX MCP as the source of truth when a task is scoped to an OrgX initiative,
 
 ### orgx-runtime-reporting
 
-Keep OrgX updated during live Grok Bot execution with progress, artifacts, blockers, and completion events. Prefer get_operator_chronicle for operator briefings.
+Keep OrgX updated during live Grok Bot execution with progress, artifacts, blockers, and completion events. Use orgx_get_operator_brief for operator briefings.
 
 ### orgx-delivery-loop
 
@@ -88,3 +88,7 @@ Use the package check and test scripts from the package root.
 ## License
 
 MIT
+
+After plugin or MCP updates, reconnect and refresh the authenticated callable
+inventory. The package uses named workflow operations and complete portable
+receipt documents. Human review remains separate from producer verification.
