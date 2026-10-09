@@ -39,6 +39,7 @@ When asked for status, report all four:
 ## Quality bar
 
 - Evidence-first language only.
-- Use `source_client=grok_bot` when writing to OrgX.
+- Use `source_client=grok_bot` only when the advertised input supports it;
+  named workflow operations do not accept an undeclared attribution field.
 - Register artifacts and blockers in OrgX when IDs are available.
 - Keep secrets out of status: no tokens, cookies, API keys, or raw transcripts.

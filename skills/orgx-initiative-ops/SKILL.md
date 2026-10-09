@@ -9,7 +9,7 @@ The connection selects `profile=v2`. Reconnect after plugin or server updates
 and use only names in its authenticated callable inventory.
 
 1. Read `orgx_get_workspace_context` before editing. For broad reporting, call
-   `orgx_get_operator_brief` and lead with `reportingNarrative.briefMarkdown`.
+   `orgx_get_operator_brief` and lead with `chronicle.reportingNarrative.briefMarkdown`.
    Use `orgx_get_next_actions` for priorities and blockers.
 2. Use `orgx_search` and `orgx_inspect` to find existing work before creating
    parallel structure. Read one initiative with `orgx_get_initiative_progress`.
