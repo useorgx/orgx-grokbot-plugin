@@ -117,8 +117,8 @@ function assertOrgxMcp(doc, label) {
   }
   const orgx = doc.mcpServers.orgx;
   if (orgx.type !== "http") fail(`${label} mcpServers.orgx.type must be http`);
-  if (orgx.url !== "https://mcp.useorgx.com/mcp") {
-    fail(`${label} mcpServers.orgx.url must be https://mcp.useorgx.com/mcp`);
+  if (orgx.url !== "https://mcp.useorgx.com/mcp?profile=v2") {
+    fail(`${label} must use the named workflow operation profile`);
   }
 }
 
@@ -187,7 +187,7 @@ for (const skillDir of ["orgx-initiative-ops", "orgx-runtime-reporting", "orgx-d
 }
 
 const coverage = readFileSync(resolve(root, "docs/client-hook-coverage.md"), "utf8");
-for (const expected of ["Grok Bot", "scaffold", "unknown", "Codex", "Cursor", "get_operator_chronicle"]) {
+for (const expected of ["Grok Bot", "scaffold", "unknown", "Codex", "Cursor", "orgx_get_operator_brief"]) {
   if (!coverage.includes(expected)) {
     fail(`client hook coverage must include: ${expected}`);
   }

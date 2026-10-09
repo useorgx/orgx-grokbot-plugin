@@ -4,7 +4,7 @@ This package loads through the real Cursor plugin path used by Grok Bot:
 
 - Manifest: `.cursor-plugin/plugin.json` (`name`: `orgx-grokbot`)
 - Team marketplace listing: `.cursor-plugin/marketplace.json`
-- MCP: root `mcp.json` (`mcpServers.orgx` -> `https://mcp.useorgx.com/mcp`)
+- MCP: root `mcp.json` (`mcpServers.orgx` -> `https://mcp.useorgx.com/mcp?profile=v2`)
 - Local load: symlink into `~/.cursor/plugins/local/orgx-grokbot`
 
 Compatibility note: .grok-plugin/plugin.json is a thin mirror only.
