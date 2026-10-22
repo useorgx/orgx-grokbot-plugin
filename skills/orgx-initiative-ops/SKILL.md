@@ -8,7 +8,8 @@ description: Use when Grok Bot is working on an OrgX initiative, workstream, mil
 The connection selects `profile=v2`. Reconnect after plugin or server updates
 and use only names in its authenticated callable inventory.
 
-1. Read `orgx_get_workspace_context` before editing. For broad reporting, call
+1. Use supplied current OrgX context, or read `orgx_get_workspace_context` when
+   OrgX state is needed for the task. For broad reporting, call
    `orgx_get_operator_brief` and lead with `chronicle.reportingNarrative.briefMarkdown`.
    Use `orgx_get_next_actions` for priorities and blockers.
 2. Use `orgx_search` and `orgx_inspect` to find existing work before creating
@@ -29,3 +30,8 @@ If a write's outcome is uncertain, reconcile status first. Retry only if its
 documented operation supports replay, with identical input and the original
 idempotency key. Never guess an alias or call an app-only human callback.
 Supply client attribution only when the advertised input schema permits it.
+
+Missing OrgX IDs, context, transport, or optional reporting does not block local
+implementation, verification, PR updates, or a user-authorized merge. Continue
+that work and report any pending OrgX write separately. A human review rule for
+an OrgX decision does not require creating a new decision for routine repo work.

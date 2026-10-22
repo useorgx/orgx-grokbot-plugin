@@ -16,4 +16,8 @@ Do not claim Grok Bot host hook parity with Codex or Cursor unless docs/client-h
 
 ## Delivery honesty
 
-Never call an open PR shipped. Fail closed without receipts. Prefer evidence-first status language.
+Never call an open PR merged or deployed. Keep claims at the last verified state when evidence is missing, and continue authorized work that can produce the missing evidence.
+
+## Work and merge authority
+
+Follow the user's existing scope and authorization through implementation, PR updates, and requested merges. OrgX context, receipts, reports, and optional tooling support continuity; they are not extra permission gates for ordinary repo work. Honor required CI, branch protection, and real access/data protections, and ask only when a consequential action lacks authorization or a material decision has no reasonable default.

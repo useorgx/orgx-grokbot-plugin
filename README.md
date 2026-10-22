@@ -69,7 +69,7 @@ Keep OrgX updated during live Grok Bot execution with progress, artifacts, block
 
 ### orgx-delivery-loop
 
-Honest delivery states only: researched, drafted, implemented, locally validated, CI-passed, merged, deployed, production-proven. Never call an open PR shipped. Fail closed without receipts. Report engineered today, stuck work, receipt gaps, and one merge or decision for a human.
+Use evidence for delivery states: researched, drafted, implemented, locally validated, CI-passed, merged, deployed, production-proven. Never call an open PR merged or deployed. Missing proof limits the claim; it does not stop authorized work that can produce that proof. Report relevant completed work, real blockers, evidence gaps, and the next action; perform already authorized merges without inventing a new human approval step.
 
 ## Work Graph reconciler
 

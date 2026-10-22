@@ -1,6 +1,6 @@
 ---
 name: orgx-delivery-loop
-description: Use when Grok Bot must report honest delivery state with receipts, never claiming an open PR is shipped, and surface engineered today, stuck work, receipt gaps, and one human merge or decision.
+description: Use when Grok Bot reports delivery state with evidence, distinguishes open PRs from merged or deployed work, and surfaces real blockers and next actions.
 ---
 
 # OrgX Delivery Loop
@@ -22,19 +22,19 @@ Only claim a state when you have receipts. Allowed states, in order:
 
 ## Hard rules
 
-- Never call an open PR shipped, done, or production-proven.
-- Fail closed without receipts: if proof is missing, stay at the last proven state.
+- Never call an open PR merged, deployed, or production-proven. State completion relative to the requested task: a request to open a PR can be complete while that PR remains open.
+- Keep claims at the last proven state when evidence is missing. Continue authorized implementation, verification, and merge work to produce that evidence; an absent OrgX receipt is not a new approval gate.
 - Prefer "implemented, awaiting review" over "shipped" when a PR is still open.
 - Do not invent CI, merge, deploy, or production evidence.
 
 ## Operator readout
 
-When asked for status, report all four:
+When asked for status, include the relevant items:
 
 1. **Engineered today** — concrete diffs, artifacts, or decisions with receipts.
 2. **Stuck** — blockers, missing context, or waiting-on-human items.
 3. **Receipt gaps** — claims that lack CI, merge, deploy, or production proof.
-4. **One merge or decision** — the single next human action that unblocks value.
+4. **Next action** — perform an authorized merge or routine follow-up; identify a human action only when actual permission or judgment is missing.
 
 ## Quality bar
 
