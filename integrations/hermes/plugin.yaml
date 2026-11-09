@@ -1,0 +1,9 @@
+name: orgx-hermes
+version: "0.1.0"
+description: "OrgX proof and continuity for AI-delivered work through its authenticated remote MCP server"
+manifest_version: 2
+api_version: 1
+license: MIT
+homepage: https://useorgx.com
+requires_hermes: ">=0.21.5"
+tags: [mcp, productivity, agent-continuity, team-work]
